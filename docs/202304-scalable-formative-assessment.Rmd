@@ -49,12 +49,20 @@ library(kableExtra)
 
 *Computer-assisted formative assessment feedback for short-answer tasks in large-enrollment classes, such that instructor burden is similar to small class (~30 students)*
 
-<!-- Note: Automate the "copy / paste" workflow -->
 
-- Human-machine collaboration is a promising mechanism to assist rapid, individualized feedback at scale (Basu, 2013)
 - Natural language processing (NLP) involves how computers can be programmed to analyze language elements (e.g., text or speech)
+- Human-machine collaboration is a promising mechanism to assist rapid, individualized feedback at scale (Basu, 2013)
 - NLP-assisted feedback has previously been studied for essays or long-answer tasks (see e.g., Attali, et al., 2008; Page, 1994)
 
+
+![How good is good enough? (image credit: DALL-E)](DALLE Robot Assist.png){width=30%}
+
+<!-- 
+DALLE: A cartoon drawing of a robot helping a college professor quickly and accurately score a large stack of student homework papers 
+-->
+
+<!-- Note: Automate the "copy / paste" workflow -->
+<!-- Note: How good does the machine have to be?? -->
 <!-- Note: as a statistician, I'm always comparing current circumstances of my data to some ideal state (SRS or randomized experiment) and negotiating compromise to achieve most desireable outcomes possible given the circumstances available. It's the same here--we want to create useful FA where there is (almost) none-->
 
 # Research Questions
@@ -64,6 +72,10 @@ library(kableExtra)
 - **RQ2**: What level of agreement is achieved between human raters and an NLP algorithm?
 
 - **RQ3**: What sort of NLP representation leads to good clustering performance, and how does that interact with the classification algorithm?
+
+
+
+
 
 \vskip 18pt
 
