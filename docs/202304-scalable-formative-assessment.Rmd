@@ -49,13 +49,13 @@ library(kableExtra)
 
 *Computer-assisted formative assessment feedback for short-answer tasks in large-enrollment classes, such that instructor burden is similar to small class (~30 students)*
 
+#### Tools
 
 - Natural language processing (NLP) involves how computers can be programmed to analyze language elements (e.g., text or speech)
 - Human-machine collaboration is a promising mechanism to assist rapid, individualized feedback at scale (Basu, 2013)
 - NLP-assisted feedback has previously been studied for essays or long-answer tasks (see e.g., Attali, et al., 2008; Page, 1994)
 
-
-![How good is good enough? (image credit: DALL-E)](DALLE Robot Assist.png){width=30%}
+![image created with assistance of DALL·E 2 by Open AI)](DALLE Robot Assist.png){width=25%}
 
 <!-- 
 DALLE: A cartoon drawing of a robot helping a college professor quickly and accurately score a large stack of student homework papers 
@@ -64,6 +64,11 @@ DALLE: A cartoon drawing of a robot helping a college professor quickly and accu
 <!-- Note: Automate the "copy / paste" workflow -->
 <!-- Note: How good does the machine have to be?? -->
 <!-- Note: as a statistician, I'm always comparing current circumstances of my data to some ideal state (SRS or randomized experiment) and negotiating compromise to achieve most desireable outcomes possible given the circumstances available. It's the same here--we want to create useful FA where there is (almost) none-->
+
+# Project Schematic
+
+![Project CLASSIFIES Schematic (NSF DUE-2236150)](Schematic.png){width=90%}
+
 
 # Research Questions
 
@@ -75,15 +80,13 @@ DALLE: A cartoon drawing of a robot helping a college professor quickly and accu
 
 
 
-
-
 \vskip 18pt
 
-### Preprint
+### Short Paper (ICOTS)
 
 \footnotesize
 
-Susan Lloyd, Matthew Beckman, Dennis Pearl, Rebecca Passonneau, Zhaohui Li, & Zekun Wang (accepted). Foundations of NLP-assisted formative assessment feedback for short-answer tasks in large enrollment statistics classes. Preprint URL: <http://arxiv.org/abs/2205.02829>
+Lloyd, S. E., Beckman, M., Pearl, D., Passonneau, R., Li, Z., & Wang, Z. (2022). Foundations for AI-Assisted Formative Assessment Feedback for Short-Answer Tasks in Large-Enrollment Classes. In *Proceedings of the eleventh international conference on teaching statistics*. Rosario, Argentina.
 
 
 # Spoilers?!
@@ -109,6 +112,10 @@ Study utilized de-identified extant data & scoring rubrics (Beckman, 2015)
 - 29 class sections 15 distinct institutions
 
 
+Note: this sample is *not* a single large class at some institution; the available data includes introductory statistics students from many class sections at many institutions--some classes were quite small.  
+
+![image created with assistance of DALL·E 2 by Open AI](DALLE exam.png){width=30%}
+
 # Methods (Short-answer task)
 
 
@@ -118,34 +125,8 @@ Study utilized de-identified extant data & scoring rubrics (Beckman, 2015)
 
 - 3 human raters typical of large-enrollment instruction team
 - 63 student responses in common for each *combination* of raters to quantify agreement (e.g., pairwise, consensus, etc)
-- constraint: sufficient data for intra-rater analysis for person that had labeled 178 responses 6 years prior
+- constraint: sufficient data for *intra-rater* analysis for person that had labeled 178 responses 6 years prior
 
-
-# Methods (RQ2)
-
-The set of task-responses were randomly split four ways:  
-
-- 90% of data for development purposes, were partitioned according to machine-learning best practice:
-    - training (72%), 
-    - development (9%)
-    - evaluation (9%)
-- 10% of data being held in reserve for more rigorous testing
-
-\vskip 14pt
-
-Two NLP algorithms were compared for accuracy using a subset of student responses (Li et al., 2021).
-
-- LSTM: a logistic regression combined with a Long Short-Term Memory for learning vector representations
-- SFRN: Semantic Feature-Wise Transformation Relation Network
-
-
-# Methods (RQ3)
-
-Manual pilot of human-generated clustering
-
-- Two reviewers independently evaluated 100 student responses that earned "partial credit" on inference tasks
-- Each reviewer provided free-text feedback to each student
-- Verbatim feedback captured for each reviewer and cross-tabulated for analysis. 
 
 
 # Results (RQ1)
@@ -166,6 +147,26 @@ Manual pilot of human-generated clustering
 Reliability interpretation[^1]: 0.6 < substantial < 0.8 < near perfect < 1.0
 
 [^1]: Viera & Garrett (2005) 
+
+
+
+# Methods (RQ2)
+
+The set of task-responses were randomly split four ways:  
+
+- 90% of data for development purposes, were partitioned according to machine-learning best practice:
+    - training (72%), 
+    - development (9%)
+    - evaluation (9%)
+- 10% of data being held in reserve for more rigorous testing
+
+\vskip 14pt
+
+Two NLP algorithms were compared for accuracy using a subset of student responses (Li et al., 2021).
+
+- LSTM: a logistic regression combined with a Long Short-Term Memory for learning vector representations
+- SFRN: Semantic Feature-Wise Transformation Relation Network
+
 
 # Results (RQ2)
 
@@ -189,6 +190,17 @@ Reliability interpretation[^3]: 0.6 < substantial < 0.8 < near perfect < 1.0
 [^3]: Viera & Garrett (2005) 
 
 
+
+# Methods (RQ3)
+
+Manual pilot of human-generated clustering
+
+- Two reviewers independently evaluated 100 student responses that earned "partial credit" on inference tasks
+- Each reviewer provided free-text feedback to each student
+- Verbatim feedback captured for each reviewer and cross-tabulated for analysis. 
+
+
+
 # Results (RQ3 machines)
 
 **RQ3**: What sort of NLP representation leads to good clustering performance, and how does that interact with the classification algorithm?
@@ -208,6 +220,7 @@ Reliability interpretation[^3]: 0.6 < substantial < 0.8 < near perfect < 1.0
 - Reviewer 2 parsed her feedback to compare her remarks related to the statistical concepts (only) with the feedback of Reviewer 1.
 
 
+
 # Discussion
 
 - **RQ1**: Substantial agreement achieved among trained human raters provides context for further comparisons
@@ -217,15 +230,41 @@ Reliability interpretation[^3]: 0.6 < substantial < 0.8 < near perfect < 1.0
 - **RQ3**: Classification and clustering have competing incentives for dimensionality; Low D is better for cluster stability, High D better for classification reliability.
 
 
-# Future work
+# Limitations
 
 - Study uses extant data from prior study collected from many classes of varying size
     - not a single large class 
     - we expect observed results are conservative due to additional variability across institutions and instructors, but will be investigated further
-- "Curse of dimensionality" on the machine learning side
+- Dimensionality on the machine learning side
 - Clustering performance vs semantic meaning
     - clustering is necessary, but not sufficient, for semantic meaning
     - semantic meaning of NLP clusters not yet rigorously studied
+
+# Future Work[^4]
+
+Software development goals: 
+
+- reliable labeling (EC/PC/IC "scoring"), across diverse student populations;
+- human-in-the-loop system to optimize human input and effort for scoring;
+- iterative instructor input to group conceptual representations
+
+Field test expansion: 
+
+- field test key aspects of project CLASSIFIES in large classes 
+    - approx 13,000 students
+    - two of the five institutions have HSI designation from US Dept of Education
+- diversify item and rubric input to examine system tolerance
+
+[^4]: Adapted from research aims of Project CLASSIFIES (NSF DUE-2236150)
+
+
+# Implications for Teaching & Research
+
+- open questions related to what "works" in formative assessment
+- the accumulated data will be made available to the broader NLP community to stimulate research
+    - this data set would be among the largest open data sources of it's kind
+    - addresses barriers imposed by proprietary data sources on NLP research
+
 
 
 # References (1/2)
