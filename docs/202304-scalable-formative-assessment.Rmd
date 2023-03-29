@@ -128,6 +128,8 @@ Note: this sample is *not* a single large class at some institution; the availab
 - constraint: sufficient data for *intra-rater* analysis for person that had labeled 178 responses 6 years prior
 
 
+![Me: "oil painting of Venn diagram for three intersecting sets"; DALLE ...swing and a miss](DALLE venn diagram.png){width=30%}
+
 
 # Results (RQ1)
 
@@ -240,7 +242,7 @@ Manual pilot of human-generated clustering
     - clustering is necessary, but not sufficient, for semantic meaning
     - semantic meaning of NLP clusters not yet rigorously studied
 
-# Future Work[^4]
+# Future Work[^5]
 
 Software development goals: 
 
@@ -255,16 +257,18 @@ Field test expansion:
     - two of the five institutions have HSI designation from US Dept of Education
 - diversify item and rubric input to examine system tolerance
 
-[^4]: Adapted from research aims of Project CLASSIFIES (NSF DUE-2236150)
+[^5]: Adapted from research aims of Project CLASSIFIES (NSF DUE-2236150)
 
 
 # Implications for Teaching & Research
 
-- open questions related to what "works" in formative assessment
-- the accumulated data will be made available to the broader NLP community to stimulate research
+- open questions for "what works" in formative assessment
+- accumulated data made available to broader NLP community
     - this data set would be among the largest open data sources of it's kind
     - addresses barriers imposed by proprietary data sources on NLP research
 
+
+![DALLE image given the prompt: "Roadmap for future educational research in the style of a retro travel poster"](DALLE roadmap.png){width=40%}
 
 
 # References (1/2)
