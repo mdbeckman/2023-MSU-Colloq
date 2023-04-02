@@ -36,6 +36,13 @@ library(kableExtra)
 1. Is your lucky number odd or even?
 2. How did you describe the value of formative assessment?
 
+# Responses to our survey?
+
+1. Is your lucky number odd or even?
+2. How did you describe the value of formative assessment?
+    - [Odd] Free text response: *write anything you like*
+    - [Even] Selected response: *endorse provided options*
+
 
 # Motivation
 
@@ -49,35 +56,45 @@ library(kableExtra)
 
 *Computer-assisted formative assessment feedback for short-answer tasks in large-enrollment classes, such that instructor burden is similar to small class (~30 students)*
 
-#### Tools
+<!-- Note: Automate the "copy / paste" workflow -->
+<!-- Note: How good does the machine have to be?? -->
+<!-- Note: as a statistician, I'm always comparing current circumstances of my data to some ideal state (SRS or randomized experiment) and negotiating compromise to achieve most desirable outcomes possible given the circumstances available. It's the same here--we want to create useful FA where there is (almost) none-->
+
+
+# Collaborators (humans)
+
+![](Proj Team3.png)
+
+# Tools (machines)
 
 - Natural language processing (NLP) involves how computers can be programmed to analyze language elements (e.g., text or speech)
 - Human-machine collaboration is a promising mechanism to assist rapid, individualized feedback at scale (Basu, 2013)
 - NLP-assisted feedback has previously been studied for essays or long-answer tasks (see e.g., Attali, et al., 2008; Page, 1994)
 
-![image created with assistance of DALL·E 2 by Open AI)](DALLE Robot Assist.png){width=25%}
+![image created with assistance of DALL·E 2 by Open AI](DALLE Robot Assist.png){width=30%}
 
-<!-- 
-DALLE: A cartoon drawing of a robot helping a college professor quickly and accurately score a large stack of student homework papers 
--->
-
-<!-- Note: Automate the "copy / paste" workflow -->
-<!-- Note: How good does the machine have to be?? -->
-<!-- Note: as a statistician, I'm always comparing current circumstances of my data to some ideal state (SRS or randomized experiment) and negotiating compromise to achieve most desireable outcomes possible given the circumstances available. It's the same here--we want to create useful FA where there is (almost) none-->
 
 # Project Schematic
 
-![Project CLASSIFIES Schematic (NSF DUE-2236150)](Schematic.png){width=90%}
+![](Schematic.png){width=90%}
+
+\vskip 12 pt
+
+\small
+*Goal: Computer-assisted formative assessment feedback for short-answer tasks in large-enrollment classes, such that instructor burden is similar to small class (~30 students)*
+
+<!-- Note: Automate the "copy / paste" workflow -->
+<!-- Note: How good does the machine have to be?? -->
+<!-- Note: as a statistician, I'm always comparing current circumstances of my data to some ideal state (SRS or randomized experiment) and negotiating compromise to achieve most desirable outcomes possible given the circumstances available. It's the same here--we want to create useful FA where there is (almost) none-->
 
 
 # Research Questions
 
-- **RQ1**: What level of agreement is achieved among trained human raters labeling (i.e., scoring or marking) short-answer tasks?
+- **RQ1**: What level of agreement is achieved among trained human raters labeling (i.e., scoring) short-answer tasks?
 
 - **RQ2**: What level of agreement is achieved between human raters and an NLP algorithm?
 
 - **RQ3**: What sort of NLP representation leads to good clustering performance, and how does that interact with the classification algorithm?
-
 
 
 \vskip 18pt
@@ -128,7 +145,6 @@ Note: this sample is *not* a single large class at some institution; the availab
 - constraint: sufficient data for *intra-rater* analysis for person that had labeled 178 responses 6 years prior
 
 
-![Me: "oil painting of Venn diagram for three intersecting sets"; DALLE ...swing and a miss](DALLE venn diagram.png){width=30%}
 
 
 # Results (RQ1)
@@ -202,6 +218,14 @@ Manual pilot of human-generated clustering
 - Verbatim feedback captured for each reviewer and cross-tabulated for analysis. 
 
 
+# Results (RQ3 humans)
+
+![Cross-tabulation of feedback distribution for the two reviewers for the initial feedback (left) compared with the same analysis for the portion of feedback related to the statistical concept at issue (right).](ConfusionMatrices_Q2B.png){width=95%}
+
+- Reviewer 1 favored feedback on statistical concepts (only). 
+- Reviewer 2 provided same, plus a quote from the student 
+- Reviewer 2 parsed her feedback to compare her remarks related to the statistical concepts (only) with the feedback of Reviewer 1.
+
 
 # Results (RQ3 machines)
 
@@ -212,14 +236,6 @@ Manual pilot of human-generated clustering
 - Highest consistency (0.88; D = 50), however, was achieved using a matrix factorization method that produces static representations (WTMF; Guo & Diab, 2011)
 
 [^4]: Consistency is measured as the ratio of all pairs of responses in a given class per question that are clustered the same way on two runs (in the same cluster, or not in the same cluster).
-
-# Results (RQ3 humans)
-
-![Cross-tabulation of feedback distribution for the two reviewers for the initial feedback (left) compared with the same analysis for the portion of feedback related to the statistical concept at issue (right).](ConfusionMatrices_Q2B.png){width=95%}
-
-- Reviewer 1 favored feedback on statistical concepts (only). 
-- Reviewer 2 provided same, plus a quote from the student 
-- Reviewer 2 parsed her feedback to compare her remarks related to the statistical concepts (only) with the feedback of Reviewer 1.
 
 
 
@@ -246,16 +262,16 @@ Manual pilot of human-generated clustering
 
 Software development goals: 
 
-- reliable labeling (EC/PC/IC "scoring"), across diverse student populations;
-- human-in-the-loop system to optimize human input and effort for scoring;
+- challenge labeling algorithm (EC/PC/IC "scoring"); target linguistic diversity;
+- human-in-the-loop policy to optimize human input and effort for scoring;
 - iterative instructor input to group conceptual representations
 
 Field test expansion: 
 
 - field test key aspects of project CLASSIFIES in large classes 
     - approx 13,000 students
-    - two of the five institutions have HSI designation from US Dept of Education
-- diversify item and rubric input to examine system tolerance
+    - two of the five institutions are recognized HSI's by US Dept of Education
+- diversify item and rubric input to challenge performance
 
 [^5]: Adapted from research aims of Project CLASSIFIES (NSF DUE-2236150)
 
@@ -266,9 +282,6 @@ Field test expansion:
 - accumulated data made available to broader NLP community
     - this data set would be among the largest open data sources of it's kind
     - addresses barriers imposed by proprietary data sources on NLP research
-
-
-![DALLE image given the prompt: "Roadmap for future educational research in the style of a retro travel poster"](DALLE roadmap.png){width=40%}
 
 
 # References (1/2)
@@ -311,8 +324,24 @@ Field test expansion:
 
 Resource Page URL: <https://mdbeckman.github.io/2023-MSU-Colloq/>
 
-<!-- # Backup slide -->
+# Google Photos Illustration
 
+![](GooglePhotos.jpeg)
+
+# Some are harder than others...
+
+![](dog-muffin.jpeg)
+
+
+# Implications for Teaching & Research
+
+![DALLE image given the prompt: "Roadmap for future educational research in the style of a retro travel poster"](DALLE roadmap.png){width=40%}
+
+# DALLE Fail...
+
+There was extra space on a Methods slide describing how we partitioned the sample to evaluate rater agreement... but DALLE wasn't up to the task.
+
+![Me: "oil painting of Venn diagram for three intersecting sets"; DALLE ...swing and a miss](DALLE venn diagram.png){width=30%}
 
 
 
