@@ -335,13 +335,13 @@ Resource Page URL: <https://mdbeckman.github.io/2023-MSU-Colloq/>
 
 # Implications for Teaching & Research
 
-![DALLE image given the prompt: "Roadmap for future educational research in the style of a retro travel poster"](DALLE roadmap.png){width=40%}
+![DALLE 2 image given the prompt: "Roadmap for future educational research in the style of a retro travel poster"](DALLE roadmap.png){width=40%}
 
-# DALLE Fail...
+# Venn Diagram Fail
 
 There was extra space on a Methods slide describing how we partitioned the sample to evaluate rater agreement... but DALLE wasn't up to the task.
 
-![Me: "oil painting of Venn diagram for three intersecting sets"; DALLE ...swing and a miss](DALLE venn diagram.png){width=30%}
+![Me: "oil painting of Venn diagram for three intersecting sets"; DALLE 2 ...swing and a miss](DALLE venn diagram.png){width=30%}
 
 
 
