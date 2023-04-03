@@ -69,16 +69,30 @@ library(kableExtra)
 
 # Tools (machines)
 
-- Natural language processing (NLP) involves how computers can be programmed to analyze language elements (e.g., text or speech)
-- Human-machine collaboration is a promising mechanism to assist rapid, individualized feedback at scale (Basu, 2013)
+- Natural language processing (NLP) involves how computers can be programmed to analyze language elements
 - NLP-assisted feedback for educational use:
-    - previously studied for essays or long-answer tasks (see e.g., Attali, et al., 2008; Page, 1994)
-    - early automated short-answer grading (ASAG) 
+    - automated short-answer grading (ASAG) from 2009
+    - essays & long-answer tasks earlier
+- Human-machine collaboration is a promising mechanism to assist rapid, individualized feedback at scale (Basu, 2013)
 - We use Semantic Feature-Wise Transformation Relation Network (SFRN; Li, Tomar, & Passonneau, 2021)
-    - back-translation (French & Chinese) as a means of data augmentation
-    - flexible to accommodate rubric elements, expert solutions, or both
+    - back-translation data augmentation (French & Chinese)
+    - can accommodate rubrics, expert solutions, or both
 
-![image created with assistance of DALL·E 2 by Open AI](DALLE Robot Assist.png){width=30%}
+![image created with assistance of DALL·E 2 by Open AI](DALLE Robot Assist.png){width=20%}
+
+# SFRN Detail (Li et al., 2021)
+
+\small
+
+SFRN is an end-to-end model with 3 components:
+
+1. encode QRA triples producing vector representations for question (Q), a possible reference (R), and student answer (A)
+2. when relation network includes multiple QRA triples, a learned feature-wise transformation network merges all relation vectors for a student answer into a single relation vector by leveraging attentions calculated by a QRA triple;
+3. the resulting vector representation is passed as an input to a classifier (i.e., neural network) 
+
+![The $g_{\theta}MLP$ function computes the relation vector for each [Q,R,A] triple. A
+set of relation vectors is combined (+) using *SFT*. The $f_{\phi}MLP$ function is the assessment classifier.](SFRN.png){width=70%}
+
 
 
 # Project Schematic
@@ -350,16 +364,6 @@ Field test expansion:
 
 
 Resource Page URL: <https://mdbeckman.github.io/2023-MSU-Colloq/>
-
-# SFRN Detail (Li et al., 2021, pp. 6031)
-
-SFRN is an end-to-end model with 3 components:
-
-1. encode each component of a QRA triple--producing vector representations for question (Q), a possible reference (R), and the provided student answer (A)
-2. when relation network includes multiple QRA triples, a learned feature-wise transformation network merges all relation vectors for a student answer into a single relation vector by leveraging attentions calculated by a QRA triple;
-3. the resulting vector representation is passed as an input to a classifier (i.e., neural network here) 
-
-
 
 
 # Google Photos Illustration
