@@ -31,10 +31,6 @@ library(kableExtra)
 #### Two question survey before seminar (scan with mobile phone) 
 ![(QR Code) https://forms.gle/hpW72fMYE1SsB19JA](QR-GForm.png){width=20%}
 
-# Responses to our survey?
-
-1. Is your lucky number odd or even?
-2. How did you describe the value of formative assessment?
 
 # Responses to our survey?
 
