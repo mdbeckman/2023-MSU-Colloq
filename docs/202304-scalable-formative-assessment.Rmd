@@ -49,8 +49,10 @@ library(kableExtra)
 - "Write-to-learn" tasks improve learning outcomes (Graham, et al., 2020)
 - Critical for citizen-statisticians to communicate statistical ideas effectively (Gould, 2010)
 - Continual practice with communicating improves statistical literacy and promotes retention (Basu, et al., 2013)
-- Formative assessment benefits both students & instructors (GAISE, 2016; Pearl, et al., 2012)
-- *Logistics* of constructed response tasks jeopardize use in large-enrollment classes
+- A majority of U.S. undergraduates at public institutions will take at least one large enrollment STEM course (Supiano, 2022)
+- Formative assessment benefits both students & instructors (Black & Wiliam, 2009; GAISE, 2016; Pearl, et al., 2012)
+- *Logistics* of constructed response tasks jeopardize use in large-enrollment classes (Garfield & Ben-Zvi, 2008; Woodard & McGowan, 2012)
+
 
 # Goal state
 
@@ -68,6 +70,7 @@ library(kableExtra)
 # Tools (machines)
 
 - Natural language processing (NLP) involves how computers can be programmed to analyze language elements (e.g., text or speech)
+<!-- SFRN w/ 3 components: (1) encode QRA triples; (2) when relation network includes multiple QRA triples, a learned feature-wise transofmation merges them into a single relation vector; (3) passes result to a classifier (e.g., neural network) -->
 - Human-machine collaboration is a promising mechanism to assist rapid, individualized feedback at scale (Basu, 2013)
 - NLP-assisted feedback has previously been studied for essays or long-answer tasks (see e.g., Attali, et al., 2008; Page, 1994)
 
@@ -294,6 +297,8 @@ Field test expansion:
 
 #. Beckman, M. (2015). Assessment Of Cognitive Transfer Outcomes For Students Of Introductory Statistics. <http://conservancy.umn.edu/handle/11299/175709>
 
+#. Black, P., & Wiliam, D. (2009). Developing the theory of formative assessment.  *Educational Assessment, Evaluation and Accountability, 21,* pp 5-31. <https://doi.org/10.1007/s11092-008-9068-5> 
+
 #. GAISE College Report ASA Revision Committee (2016). Guidelines for Assessment and Instruction in Statistics Education College Report 2016. URL: <http://www.amstat.org/education/gaise>
 
 #. Gould, R. (2010). Statistics and the Modern Student. *International Statistical Review / Revue Internationale de Statistique, 78*(2), 297–315. <https://www.jstor.org/stable/27919839>
@@ -313,7 +318,11 @@ Field test expansion:
 
 #. Pearl, D. K., Garfield, J. B., delMas, R., Groth, R. E., Kaplan, J. J., McGowan, H., & Lee, H. S. (2012). Connecting Research to Practice in a Culture of Assessment for Introductory College-level Statistics. URL: <http://www.causeweb.org/research/guidelines/ResearchReport_Dec_2012.pdf>
 
+#. Supiano (2022)
+
 #. Viera, A. J., & Garrett, J. M. (2005). Understanding interobserver agreement: the kappa statistic. *Family Medicine, 37*(5), 360–363.
+
+#. Woodard, R., & McGowan, H. (2012). Redesigning a large introductory course to incorporate the GAISE guidelines. *Journal of Statistics Education, 20*(3). 
 
 
 # Thank You 
