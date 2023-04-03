@@ -18,8 +18,8 @@ output:
 
 ## Resources
 
-- [Slides (PDF)](202304-scalable-formative-assessment.pdf)
-- [Short Paper (PDF)](ICOTS-Paper.pdf): Lloyd, S. E., Beckman, M., Pearl, D., Passonneau, R., Li, Z., & Wang, Z. (2022). Foundations for AI-Assisted Formative Assessment Feedback for Short-Answer Tasks in Large-Enrollment Classes. In *Proceedings of the eleventh international conference on teaching statistics*. Rosario, Argentina.
+- [Slides (PDF)](docs/202304-scalable-formative-assessment.pdf)
+- [Short Paper (PDF)](docs/ICOTS-Paper.pdf): Lloyd, S. E., Beckman, M., Pearl, D., Passonneau, R., Li, Z., & Wang, Z. (2022). Foundations for AI-Assisted Formative Assessment Feedback for Short-Answer Tasks in Large-Enrollment Classes. In *Proceedings of the eleventh international conference on teaching statistics*. Rosario, Argentina.
 
 
 
